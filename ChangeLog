@@ -1,0 +1,13 @@
+2011-07-23  Xi (Rossi) LUO  <xi.rossi.luo@gmail.com>
+
+
+	* Version: 0.3
+	* likelihood.R: more stable log-det calculation
+
+2011-02-01  Xi (Rossi) LUO  <xi.rossi.luo@gmail.com>
+
+
+	* Version: 0.2
+	* Release: first public release
+
+

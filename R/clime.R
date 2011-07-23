@@ -13,7 +13,7 @@ clime <- function(x, lambda=NULL,
   lpfun <- match.arg(linsolver, c("primaldual", "simplex"))
   
   if (sigma) {
-    Sigma <- x
+    Sigma <- ifelse(is.matrix(x), x, as.matrix(x))
     p <- ncol(Sigma)
     x <- NULL
   } else {
