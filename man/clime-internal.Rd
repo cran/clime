@@ -21,10 +21,10 @@ tracel2(Sigma, Omega)
   There are not intended for use by users.   
 }
 
-\references{Cai, T.T., Liu, W., and Luo, X. (2010).   \emph{
+\references{Cai, T.T., Liu, W., and Luo, X. (2011).   \emph{
      A constrained \eqn{\ell_1}
   minimization approach for sparse precision matrix estimation.
-  } Journal of the American Statistical Association.  To appear. 
+  } Journal of the American Statistical Association  106(494): 594-607. 
 }
 
 \author{T. Tony Cai, Weidong Liu and Xi (Rossi) Luo\cr

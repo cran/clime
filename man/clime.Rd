@@ -9,7 +9,7 @@
 \usage{
 clime(x, lambda=NULL, nlambda=ifelse(is.null(lambda),100,length(lambda)),
       lambda.max=0.8, lambda.min=ifelse(nrow(x)>ncol(x), 1e-4, 1e-2),
-      sigma=FALSE, perturb=FALSE, standardize=TRUE, logspaced=TRUE,
+      sigma=FALSE, perturb=TRUE, standardize=TRUE, logspaced=TRUE,
       linsolver=c("primaldual", "simplex"), pdtol=1e-3, pdmaxiter=50)
 }
 %- maybe also 'usage' for other objects documented here.
@@ -35,7 +35,7 @@ clime(x, lambda=NULL, nlambda=ifelse(is.null(lambda),100,length(lambda)),
   \item{sigma}{Whether \code{x} is the sample covariance matrix.
     Default FALSE. }
   \item{perturb}{Whether a perturbed \code{Sigma} should be used or
-    the positive perturbation added if it is numerical.  Default FALSE.}
+    the positive perturbation added if it is numerical.  Default TRUE.}
   \item{logspaced}{Whether program generated lambda should be
     log-spaced or linear spaced.  Default TRUE.
   }
@@ -77,10 +77,10 @@ clime(x, lambda=NULL, nlambda=ifelse(is.null(lambda),100,length(lambda)),
   \item{lpfun}{Linear programming solver used.}
 }
 
-\references{Cai, T.T., Liu, W., and Luo, X. (2010).   \emph{
+\references{Cai, T.T., Liu, W., and Luo, X. (2011).   \emph{
      A constrained \eqn{\ell_1}
   minimization approach for sparse precision matrix estimation.
-  } Journal of the American Statistical Association. To appear.
+  } Journal of the American Statistical Association 106(494): 594-607.
 }
 
 \author{T. Tony Cai, Weidong Liu and Xi (Rossi) Luo\cr

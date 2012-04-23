@@ -3,7 +3,7 @@ clime <- function(x, lambda=NULL,
                   lambda.max=0.8,
                   lambda.min=ifelse(nrow(x)>ncol(x), 1e-4, 1e-2),
                   sigma=FALSE,
-                  perturb=FALSE,
+                  perturb=TRUE,
                   standardize=TRUE,
                   logspaced=TRUE,
                   linsolver=c("primaldual", "simplex"),
@@ -13,7 +13,11 @@ clime <- function(x, lambda=NULL,
   lpfun <- match.arg(linsolver, c("primaldual", "simplex"))
   
   if (sigma) {
-    Sigma <- ifelse(is.matrix(x), x, as.matrix(x))
+    if (is.matrix(x)) {
+      Sigma <- x
+    } else {
+      Sigma <-as.matrix(x)
+    }
     p <- ncol(Sigma)
     x <- NULL
   } else {

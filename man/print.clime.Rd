@@ -24,11 +24,10 @@
   The output above is invisiblly returned.
 }
 
-\references{Cai, T.T., Liu, W., and Luo, X. (2010).   \emph{
+\references{Cai, T.T., Liu, W., and Luo, X. (2011).   \emph{
      A constrained \eqn{\ell_1}
   minimization approach for sparse precision matrix estimation.
-  } Technical Report, University of Pennsylvania.
-}
+} Journal of the American Statistical Association 106(494): 594-607.}
 
 \author{T. Tony Cai, Weidong Liu and Xi (Rossi) Luo\cr
   Maintainer: Xi (Rossi) Luo \email{xi.rossi.luo@gmail.com} }
